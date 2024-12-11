@@ -1,0 +1,84 @@
+#producto-form {
+  display: flex;
+  width: 55%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6a5acd;
+}
+
+/*--------------------------*/
+
+#file-input {
+  display: none;
+}
+
+.subir-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5a4bcd;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #9d95db;
+}
+
+.preview {
+  border: 1px dashed darkblue;
+  min-width: 100px;
+  min-height: 100px;
+  margin-top: 15px;
+}
+
+.preview img {
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #5a4bcd;
+}

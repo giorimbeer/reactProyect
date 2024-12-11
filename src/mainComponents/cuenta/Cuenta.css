@@ -1,0 +1,26 @@
+#root {
+  margin: 0;
+  padding: 0rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    background-color: #312783;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #5b4dc2;
+  }
+}

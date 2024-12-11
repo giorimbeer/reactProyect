@@ -1,0 +1,134 @@
+.producto {
+  max-width: 250px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  border: 2px solid #312783;
+  border-radius: 5px;
+  padding: 20px 1px;
+  cursor: pointer;
+}
+
+.producto:hover {
+  background-color: rgba(245, 250, 255, 0.96);
+}
+
+.producto-info {
+  display: flex;
+}
+
+.producto-info p {
+  margin: 10px 10px 0px 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0;
+}
+
+.producto-img {
+  max-width: 200px;
+  margin: 0px 0px;
+  padding: 0;
+}
+
+/*-----------------------------------*/
+
+.fondo {
+  width: 100%;
+  height: 100%;
+
+  background-color: #05002f57;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.salir {
+  width: 100%;
+  height: 100%;
+}
+
+.producto-detalles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 60px 30px;
+
+  border: medium solid rgb(25, 0, 72);
+  border-radius: 10px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 60%;
+  height: 40%;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.detalles-texto {
+  text-align: start;
+  max-width: 40%;
+  margin-left: 30px;
+}
+
+.producto-detalles img {
+  padding: 20px;
+  max-width: 40%;
+  height: auto;
+  object-fit: contain;
+  border: medium dashed rgb(25, 0, 72);
+}
+
+.comprar {
+  margin: 0;
+  margin-top: 60px;
+  padding: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: start;
+  align-content: center;
+
+  p {
+    margin-right: 30px;
+  }
+
+  button {
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    padding: 0 10px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: rgb(0, 0, 118);
+  }
+}
+
+.btn-cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgb(194, 0, 0);
+  border-radius: 50%;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff6f6;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s;
+}
+
+.btn-cerrar:hover {
+  background-color: rgb(255, 133, 133);
+}
