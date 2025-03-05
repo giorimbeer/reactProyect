@@ -1,0 +1,82 @@
+.contenedor-cuenta-iniciada {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  background: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.contenedor-btns {
+  width: 20%;
+  background: #e0e0e0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.btn-historial,
+.btn-editar-perfil,
+.btn-cerrar-sesion {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn-historial {
+  background: #1b0087;
+  color: white;
+}
+
+.btn-editar-perfil {
+  background: #ffbf00;
+  color: black;
+}
+
+.btn-cerrar-sesion {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-historial:hover {
+  background: #0056b3;
+}
+
+.btn-editar-perfil:hover {
+  background: #e0a800;
+}
+
+.btn-cerrar-sesion:hover {
+  background: #c82333;
+}
+
+.contenedor-info {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 📱 Responsivo */
+@media (max-width: 768px) {
+  .contenedor-cuenta-iniciada {
+    flex-direction: column;
+  }
+
+  .contenedor-btns {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contenedor-info {
+    width: 100%;
+  }
+}

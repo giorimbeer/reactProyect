@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import "./AdminProductos.css";
 import Header from "../../componentes/Header/Header.jsx";
-import Formulario from "../../componentes/AdminProducts/Formulario.jsx";
+import Formulario from "./FormulariosProductos/FormulariosProductos.jsx";
 
 /* renderiza los componenetes en el html */
 createRoot(document.getElementById("root")).render(
@@ -34,6 +34,7 @@ function AdminProductos() {
     imgTitulo = "Cambiar Imagen";
   } else {
     formEliminar = true;
+    btnValue = "Eliminar";
   }
 
   function manejarCambio(m) {

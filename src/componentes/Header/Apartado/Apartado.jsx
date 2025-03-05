@@ -14,11 +14,11 @@ function Apartado(props) {
   );
 }
 
-Apartado.defaultProps = {
-  nombre: "nombre",
-  direccion: "#",
-  icono: "src/assets/logoEmpresa.png",
-};
+// Apartado.defaultProps = {
+//   nombre: "nombre",
+//   direccion: "#",
+//   icono: "src/assets/logoEmpresa.png",
+// };
 
 Apartado.propTypes = {
   nombre: PropTypes.string,

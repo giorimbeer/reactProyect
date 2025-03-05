@@ -5,7 +5,7 @@ li {
 
 li a {
   text-decoration: none;
-  color: #f5c542;
+  color: #0f0096;
   font-weight: bold;
   transition: color 0.3s;
 
@@ -23,5 +23,5 @@ li a {
 }
 
 li a:hover {
-  color: #333;
+  color: #4b7bff;
 }

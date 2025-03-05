@@ -1,9 +1,10 @@
 import "./Productos.css";
 import { StrictMode } from "react";
+import { useState } from "react";
 import { createRoot } from "react-dom/client";
 import Header from "../../componentes/Header/Header.jsx";
-import ListaCategorias from "../../componentes/Categorias/ListaCategorias.jsx";
-import ListaProductos from "../../componentes/ListaProductos/ListaProductos.jsx";
+import ListaCategorias from "./Categorias/ListaCategorias.jsx";
+import ListaProductos from "./ListaProductos/ListaProductos.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,12 +16,14 @@ createRoot(document.getElementById("root")).render(
    el cual contiene otros componenetes
    como compuestos como el header*/
 function Productos() {
+  const [categoria, setCategoria] = useState("general");
+
   return (
     <>
       <Header />
       <main>
-        <ListaCategorias />
-        <ListaProductos />
+        <ListaCategorias setCategoria={setCategoria} />
+        <ListaProductos categoria={categoria} />
       </main>
     </>
   );

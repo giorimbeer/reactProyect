@@ -1,0 +1,60 @@
+.tarjeta-pedido {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.tarjeta-pedido:hover {
+  transform: scale(1.02);
+}
+
+.pedido-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pedido-info p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+.estado {
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.estado.pendiente {
+  background: orange;
+  color: white;
+}
+.estado.entregado {
+  background: green;
+  color: white;
+}
+.estado.cancelado {
+  background: red;
+  color: white;
+}
+
+.btn-detalles {
+  background: #0f007d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-detalles:hover {
+  background: #0056b3;
+}

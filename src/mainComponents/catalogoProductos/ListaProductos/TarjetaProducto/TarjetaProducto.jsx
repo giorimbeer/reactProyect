@@ -16,11 +16,13 @@ function TarjetaProducto(props) {
     /* renderiza la informacion basica del producto */
     return (
       <div onClick={() => manejarClick()} className="producto">
-        <img
-          className="producto-img"
-          src={props.img}
-          alt="imgagen del Producto"
-        />
+        <div className="contenedor-img">
+          <img
+            className="producto-img"
+            src={props.img}
+            alt="imgagen del Producto"
+          />
+        </div>
         <div className="producto-info">
           <p className="producto-nombre">{props.nombre}</p>
           <p className="producto-precio">{props.precio}</p>
@@ -55,17 +57,9 @@ function TarjetaProducto(props) {
 
 TarjetaProducto.propTypes = {
   nombre: PropTypes.string,
-  precio: PropTypes.string,
+  precio: PropTypes.number,
   img: PropTypes.string,
   descripcion: PropTypes.string,
-};
-
-TarjetaProducto.defaultProps = {
-  nombre: "producto",
-  precio: "$9999999",
-  img: "https://cdn-icons-png.flaticon.com/256/14477/14477431.png",
-  descripcion:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque exercitationem corrupti soluta sequi dolore possimus sed accusamus placeat consequuntur, a modi obcaecati amet commodi excepturi rerum dicta, eveniet natus quae?",
 };
 
 export default TarjetaProducto;

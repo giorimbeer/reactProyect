@@ -1,5 +1,5 @@
 import "./Header.css";
-import Apartado from "./Apartado.jsx";
+import Apartado from "./Apartado/Apartado.jsx";
 
 /* Es el header o encabezado de la aplicacion
 que permite la navegacion por las diferentes partes de la misma */

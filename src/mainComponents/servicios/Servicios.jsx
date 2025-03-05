@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import Header from "../../componentes/Header/Header";
-import Servicio from "../../componentes/Tarjetas/TarjetaServicio";
+import Servicio from "./TarjetaServicio/TarjetaServicio";
 import TarjetaContacto from "../../componentes/Tarjetas/TarjetaContacto";
 import "./Servicios.css";
 

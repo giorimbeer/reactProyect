@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import Header from "../../componentes/Header/Header.jsx";
-import BtnIndex from "../../componentes/Botones/BtnIndex.jsx";
+import BtnIndex from "./BtnIndex/BtnIndex.jsx";
 
 /* renderiza los componenetes en el html */
 createRoot(document.getElementById("root")).render(

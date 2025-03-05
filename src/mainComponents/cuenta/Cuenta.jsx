@@ -3,7 +3,8 @@ import { createRoot } from "react-dom/client";
 import { useState } from "react";
 import "./cuenta.css";
 import Header from "../../componentes/Header/Header.jsx";
-import FormularioCuenta from "../../componentes/cuenta/FormularioCuenta.jsx";
+import FormularioCuenta from "./FormularioCuenta/FormularioCuenta.jsx";
+import CuentaIniciada from "./CuentaIniciada/CuentaIniciada.jsx";
 
 /* renderiza el codigo en el html */
 createRoot(document.getElementById("root")).render(
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")).render(
 
 function Cuenta() {
   const [crearCuenta, setCrearCuenta] = useState(false);
+  const [cuentaIniciada, setCuentaIniciada] = useState(false);
 
   let titulo, btnValue, mensaje;
 
@@ -40,15 +42,28 @@ function Cuenta() {
     <>
       <Header />
       <main>
-        <FormularioCuenta
-          titulo={titulo}
-          crearCuenta={crearCuenta}
-          btnValue={btnValue}
-        />
-        {/*boton para cambiar formularios */}
-        <button onClick={CambiarFormulario} type="button">
-          {mensaje}
-        </button>
+        {/*si la cuenta esta iniciada muestra la informacion de la cuenta */}
+        {cuentaIniciada ? (
+          <CuentaIniciada onCuentaIniciada={setCuentaIniciada} />
+        ) : (
+          <>
+            <FormularioCuenta
+              titulo={titulo}
+              crearCuenta={crearCuenta}
+              btnValue={btnValue}
+              onCuentaIniciada={setCuentaIniciada}
+              onCuentaCreada={setCrearCuenta}
+            />
+            {/*boton para cambiar formularios */}
+            <button
+              className="cambio-formulario"
+              onClick={CambiarFormulario}
+              type="button"
+            >
+              {mensaje}
+            </button>
+          </>
+        )}
       </main>
     </>
   );

@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./Informacion.css";
 import Header from "../../componentes/Header/Header.jsx";
-import TarjetaInfo from "../../componentes/Tarjetas/TarjetaInfo.jsx";
+import TarjetaInfo from "./TarjetaInfo/TarjetaInfo.jsx";
 import TarjetaContacto from "../../componentes/Tarjetas/TarjetaContacto.jsx";
 
 createRoot(document.getElementById("root")).render(

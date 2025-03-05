@@ -10,7 +10,7 @@ header {
   padding: 10px 20px;
   border-bottom: 2px solid #f5c542;
   background-color: #ffffff;
-  color: #f5c542;
+  color: #0f0096;
   padding-bottom: 10px;
   z-index: 100;
   flex-wrap: wrap;
@@ -37,7 +37,7 @@ header {
   margin-left: 15px;
   padding-top: 10px;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 nav {
